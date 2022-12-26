@@ -22,16 +22,657 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root">
+      <header class="header">
+        <section class="header-content">
+        <div class="player-bar-inner-wrap">
+          <a class="player-bar-artwork">
+            <img src="https://www.last.fm/static/images/defaults/player_default_album.430223706b14.png" id="player_bar_play_1" height="58" width="58"/>
+          </a>
+          <div class="source-info">
+          </div>
+          <div>
+            <ul class="media-controls">
+              <li>
+                <button class="player-bar-btn--previous"></button>
+              </li>
+              <li>
+                <button class="player-bar-btn--play"></button>
+              </li>
+              <li>
+                <button class="player-bar-btn--next"></button>
+              </li>
+            </ul>
+          </div>
+          <div class="player-bar-now-playing">
+            <div class="player-bar-now-playing-inner-wrap">
+              <p></p>
+            </div>
+          </div>
+          <div class="player-bar-progress">
+          </div>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <div class="masthead-logo">
+          <a href="/"></a>
+        </div>
+        
+        <div class="masthead">
+          <div class="masthead-inner-wrap">
+            <a class="masthead-search-toggle"></a>
+            <div class="navlist--more">
+              <ul class="navlist-items">
+                <li>
+                  <a class="masthead-nav-control hover-text" href="https://www.last.fm/dashboard">Live</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control hover-text" href="https://www.last.fm/music">Music</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control hover-text" href="https://www.last.fm/charts">Charts</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control hover-text" href="https://www.last.fm/events">Events</a>
+                </li>
+                <li>
+                  <a class="masthead-nav-control hover-text" href="https://www.last.fm/features">Features</a>
+                </li>
+              </ul>
+            </div>
+        </div> 
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <ul class="site-auth">
+          <li class="site-auth-item">
+            <a class="site-auth-control hover-text" href="https://www.last.fm/login">Log in</a>
+          </li>
+        </ul>
+        <a class="btn-secondary" href="https://www.last.fm/join">SING UP</a>
+        </section>
+      </header>
+  
+      <main class="content">
+          <div>
+            <h1 class="content-top-header">
+              Music
+            </h1>
+            <div class="container-page-content">
+              <section class="music-section">
+                <h2 class="music-section-heading">Hot right now</h2>
+                <ol class="music-more-artists">
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                        <div class="media-item">
+                          <span class="avatar">
+                            <img src="https://lastfm.freetls.fastly.net/i/u/300x300/f67b3747a6e31aea5a5fae1fdb06d906.jpg">
+                          </span>
+                        </div>
+                        <h3 class="music-more-artists-item-name hover-text">Jin</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">bts</li>
+                        <li class="hover-text">hip-hop</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                        <div class="media-item">
+                          <span class="avatar">
+                            <img src="https://lastfm.freetls.fastly.net/i/u/300x300/8ee856aa702a3e01ddede54af3380bf4.jpg">
+                          </span>
+                        </div>
+                        <h3 class="music-more-artists-item-name hover-text">Kanye West</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">hip-hop</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/9e594670d75384b1a2b2432a020a3aa7.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Ken Carson</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">opium</li>
+                        <li class="hover-text">rage</li>
+                        <li class="hover-text">trap</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/98c7ac4149d5e18c569800e0821968a9.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Baby Keem</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">trap</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/e99eefc7294dbdb0b5402d3b47004bd5.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Playboi Carti</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">trap</li>
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">cloud rap</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/1d4ccfe034d2f7b880146f5523f3987d.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Drake</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">rnb</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/725cbf01f1b2b49bf17b3cb6e956283b.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">The Weeknd</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rnb</li>
+                        <li class="hover-text">electronic</li>
+                        <li class="hover-text">canadian</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ab7a6339205f9c9ac97069f5ce0cf103.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Kendrick Lamar</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">hip-hop</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/0cbe15b8d7aeff2b90190c0c7bc1f5b2.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Tyler, the Creator</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">ofwgkta</li>
+                        <li class="hover-text">hip-hop</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/a9788abf3dd8ebd18e55ec6809c8995c.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Arctic Monkeys</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">indie rock</li>
+                        <li class="hover-text">indie</li>
+                        <li class="hover-text">british</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/d6e904e50bb79e7877711efe9463c675.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Juice WRLD</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">rap</li>
+                        <li class="hover-text">emo rap</li>
+                        <li class="hover-text">hip-hop</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="music-more-artists-item-wrap">
+                    <div class="music-more-artists-item">
+                      <div class="artist-avatar">
+                      <div class="media-item">
+                        <span class="avatar">
+                          <img src="https://lastfm.freetls.fastly.net/i/u/300x300/58e50b952de3f500384d3f45d8edb7df.jpg">
+                        </span>
+                      </div>
+                      <h3 class="music-more-artists-item-name hover-text">Bladee</h3>
+                      </div>
+                      <ul class="tag">
+                        <li class="hover-text">trap</li>
+                        <li class="hover-text">hip-hop</li>
+                        <li class="hover-text">cloud trap</li>
+                      </ul>
+                    </div>
+                  </li>
+
+                </ol>
+              </section>
+            </div>
+
+            <div class="container-page-content">
+              <section class="music-section">
+                <h2 class="music-section-heading">Popular tracks</h2>
+                <ol class="column-tracks">
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/0fe6ceb1724e7c44f483413b011b391e.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">The Astronaut</h3>
+                        <p class="column-tracks-item-artist hover-text">Jin</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">rap</li>
+                          <li class="hover-text">bts</li>
+                          <li class="hover-text">hip-hop</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ab707b9f7cb3321ccdf5aad2b16c825b.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Bejeweled</h3>
+                        <p class="column-tracks-item-artist hover-text">Taylor Swift</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">pop</li>
+                          <li class="hover-text">singer-songwriter</li>
+                          <li class="hover-text">electronic</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/66d3ab40aa56c8cb83c2751dae5bc672.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Yet to Come</h3>
+                        <p class="column-tracks-item-artist hover-text">BTS</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">k-pop</li>
+                          <li class="hover-text">bts</li>
+                          <li class="hover-text">korean</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/47403415f97336603c88ea4c1062d4b1.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">ANTIFRAGILE</h3>
+                        <p class="column-tracks-item-artist hover-text">LE SSERAFIM</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">reggaeton</li>
+                          <li class="hover-text">k-pop</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/7f6eded6cfe999ddc394bbe709defc43.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Shirt</h3>
+                        <p class="column-tracks-item-artist hover-text">SZA</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">myspotigrambot</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/c7f947f888d002fc3d84b38cfa96829c.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Just Wanna Rock</h3>
+                        <p class="column-tracks-item-artist hover-text">Lil Uzi Vert</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">jersey club</li>
+                          <li class="hover-text">lil uzi vert</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/ad14504eb8a61b62b84d9aaf9eab6de0.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Super Tuna</h3>
+                        <p class="column-tracks-item-artist hover-text">Jin</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">pop</li>
+                          <li class="hover-text">folk</li>
+                          <li class="hover-text">k-pop</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/b11feab3d5951f275dc5258774a3a0ea.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">Unholy (feat. Kim Petras)</h3>
+                        <p class="column-tracks-item-artist hover-text">Sam Smith</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">hyperpop</li>
+                          <li class="hover-text">pop</li>
+                          <li class="hover-text">electropop</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="column-tracks-item">
+                      <div class="media-item-tracks">
+                        <img src="https://lastfm.freetls.fastly.net/i/u/300x300/70ff23ed846e3e4a14717863e71ba8dc.jpg">
+                      </div>
+                      <div class="media-item-tracks-info">
+                        <h3 class="column-tracks-item-name hover-text">MORE</h3>
+                        <p class="column-tracks-item-artist hover-text">j-hope</p>
+                        <ul class="tags-list">
+                          <li class="hover-text">rock</li>
+                          <li class="hover-text">rap</li>
+                          <li class="hover-text">hip-hop</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+          </div>
+      </main>
+  
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-container">
+            <div class="footer-top-row">
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Company</h2>
+                <ul class="footer-links">
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/about">About Last.fm</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/about/contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/about/jobs">Jobs</a>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Help</h2>
+                <ul class="footer-links">
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/about/trackmymusic">Track My Music</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://support.last.fm/">Community Support</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/help/guidelines">Community Guidelines</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/help/faq">Help</a>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Goodies</h2>
+                <ul class="footer-links">
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/about/trackmymusic">Download Scrobbler</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/api">Developer API</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/music/+free-music-downloads">Free Music Downloads</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://store.last.fm/">Merchandise</a>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Account</h2>
+                <ul class="footer-links">
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/join">Sign Up</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/login">Log In</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/pro">Subscribe</a>
+                  </li>
+                </ul>
+              </div> 
+
+              <div class="footer-top-col">
+                <h2 class="footer-heading">Follow Us</h2>
+                <ul class="footer-links">
+                  <li>
+                    <a class="hover-text link" href="https://www.facebook.com/lastfm">Facebook</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://twitter.com/lastfm">Twitter</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.instagram.com/last_fm">Instagram</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.youtube.com/user/lastfm">YouTube</a>
+                  </li>
+                </ul>
+              </div> 
+
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-container">
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-9">
+                <ul class="language-selector">
+                  <li class="footer-language footer-language--active">
+                    <strong>English</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Deutsch</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Español</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Français</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Italiano</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">日本語</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Polski</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Português</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Русский</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Svenska</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">Türkçe</strong>
+                  </li>
+
+                  <li class="footer-language">
+                    <strong class="hover-text">简体中文</strong>
+                  </li>
+
+                </ul>
+
+                <p class="footer-timezone">
+                  <a class="link" href="https://www.last.fm/settings/website#website">
+                  <span class="hover-text">Time zone:
+                    <strong>Europe/Moscow</strong>
+                  </span>
+                  </a>
+                </p>
+
+
+                <ul class="footer-legal">
+                  <li>
+                    <a class="hover-text link" href="http://www.cbsinteractive.com/">CBS Interactive</a> 
+                  </li>
+                  <li>© 2022 Last.fm Ltd. All rights reserved</li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/legal/terms">Terms of Use</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/legal/privacy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/legal">Legal Policies</a>
+                  </li>
+                  <li>
+                    <a class="hover-text link" href="https://www.last.fm/legal/cookies">Cookies Policy</a>
+                  </li>
+                  <li class="hover-text"> Cookie Information</li>
+                  <li>
+                    <a class="hover-text link" href="https://careers.viacomcbs.com/">Jobs at ViacomCBS</a>
+                  </li>
+                </ul>
+                <p class="footer-legal">
+                  <a class="hover-text link" href="http://www.last.fm/">Last.fm Music</a>
+                </p>
+              </div>
+
+              <div class="logo">
+                <p>Audioscrobbler</p>
+                <img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" width="37" height="20">
+
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </footer>
+    </div>
+   
   </body>
 </html>
