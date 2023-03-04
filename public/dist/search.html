@@ -13,6 +13,8 @@
   </head>
   <body class="app vsmall">
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script type="text/javascript" src="search.js" defer></script>
+    <script type="text/javascript" src="createNodes.js" defer></script>
     <header class="header vsmall">
       <div class="header_div">
         <div class="cur_track">
@@ -42,162 +44,44 @@
     </div>
     </header>
 
-
     <main class="search_content">   
         <div class="content_search"> 
         <div class="search_content_top">
                 <div class="search_nav_top">
-                    <h2 class="content_top_header" id="search">Search results for ".."</h2>
+                    <h2 class="content_top_header" id="search"></h2>
                 </div>
                 <nav class="search_nav">
-                    <ul class="search_nav_list">
-                        <li class="search_nav_item">Top Results</li>
-                        <li class="search_nav_item">Artists</li>
-                        <li class="search_nav_item">Albums</li>
-                        <li class="search_nav_item">Tracks</li>
-                    </ul>
+                  <div class="search_nav_list">
+                    <a class="search_nav_item active">Top Results</a>
+                    <a class="search_nav_item">Artists</a>
+                    <a class="search_nav_item">Albums</a>
+                    <a class="search_nav_item">Tracks</a>
+                  </div>
                 </nav>
             </div>
-            <form class="search_form">
+            <form class="search_form"  onsubmit="return false;">
                 <input class="search_input">
                 <button class="clear_btn btn16"></button>
                 <button class="form_search_btn btn16"></button>
             </form>
             <div class="search_results">
+              <div id="artists">
                 <p><h2>Artists</h2></p>
                 <div class="grid_square">
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Artist name</p>
-                        <p class="square_sec_info">... listeners</p>
-                    </div>
+                    
                 </div>
+              </div>
+              <div id="albums">
                 <h2> Albums</h2>
                 <div class="grid_square">
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                      </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                      </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                      </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
-                    <div class="photo_square">
-                        <p class="square_info">Album name</p>
-                        <p class="square_sec_info">artist</p>
-                    </div>
+                    
                 </div>
+              </div>
+              <div id="tracks">  
                 <h2>Tracks</h2>
-                <section>
-                <table>
-                    <tbody>
-                        <tr class="track">
-                            <td class="track_play_btn"></td>
-                            <td class="track_image"></td>
-                            <td class="track_like_btn"></td>
-                            <td class="track_name"><h2>asdasd</h2></td>
-                            <td class="artist">asdasd</td>
-                            <td class="duration">3:00</td>
-                        </tr>
-                        <tr class="track">
-                            <td class="track_play_btn"></td>
-                            <td class="track_image"></td>
-                            <td class="track_like_btn"></td>
-                            <td class="track_name"><h2>asdasd</h2></td>
-                            <td class="artist">asdasd</td>
-                            <td class="duration">3:00</td>
-                        </tr>
-                        <tr class="track">
-                            <td class="track_play_btn"></td>
-                            <td class="track_image"></td>
-                            <td class="track_like_btn"></td>
-                            <td class="track_name"><h2>asdasd</h2></td>
-                            <td class="artist">asdasd</td>
-                            <td class="duration">3:00</td>
-                        </tr>
-                        <tr class="track">
-                            <td class="track_play_btn"></td>
-                            <td class="track_image"></td>
-                            <td class="track_like_btn"></td>
-                            <td class="track_name"><h2>asdasd</h2></td>
-                            <td class="artist">asdasd</td>
-                            <td class="duration">3:00</td>
-                        </tr>
-                        <tr class="track">
-                            <td class="track_play_btn"></td>
-                            <td class="track_image"></td>
-                            <td class="track_like_btn"></td>
-                            <td class="track_name"><h2>asdasd</h2></td>
-                            <td class="artist">asdasd</td>
-                            <td class="duration">3:00</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-            </section>
+                <div class="search_tracks">
+                </div>  
+              </div>
             </div>
             </div>
             <div class="block"></div>
