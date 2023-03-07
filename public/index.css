@@ -3,35 +3,55 @@
     padding: 0;
     font-family: 'Lucida Sans Unicode';
 }
-@media only screen and (min-width: 1025px){
-    .small_width{
+
+
+@media only screen and (min-width: 1025px) {
+    .small_width {
         visibility: hidden;
     }
-    .search_nav_top{
+
+    .search_nav_top {
         margin-left: auto;
         margin-right: auto;
         width: 1200px;
     }
-    .content{
+
+    .content {
         position: relative;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 1200px;
     }
+
     .artists {
         margin-top: 100px;
-        padding-left: 120px;
     }
-    .popular_tracks_grid{
+    
+    .square_photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .square_track {
+        width: 38px;
+        height: 38px;
+    }
+
+    .artist_track {
+        font-size: x-small;
+    }
+
+    .popular_tracks_grid {
         padding-left: 120px;
         padding-top: 20px;
         display: grid;
         grid-template-columns: repeat(3, 370px);
-        grid-template-rows: repeat(6,80px);
+        grid-template-rows: repeat(6, 80px);
         justify-content: center;
     }
-    .footer_top{
+
+    .footer_top {
         height: 50%;
         width: 1150px;
         padding: 30px;
@@ -40,10 +60,12 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .block{
+
+    .block {
         background-color: #ebebeb;
     }
-    .content_search{
+
+    .content_search {
         position: relative;
         height: 100%;
         margin-left: auto;
@@ -51,7 +73,8 @@
         width: 1200px;
         margin-left: 30px;
     }
-    .search_content{
+
+    .search_content {
         display: grid;
         grid-template-columns: 1200px auto;
         width: 100%;
@@ -59,40 +82,48 @@
         height: 100%;
     }
 }
-@media only screen and (max-width: 1024px){
-    .huge_width{
+
+
+@media only screen and (max-width: 1024px) {
+
+    .huge_width {
         visibility: hidden;
     }
-    .search_nav_top{
+
+    .search_nav_top {
         margin-left: auto;
         margin-right: auto;
         width: 994px;
-    }
-    .content{
+    } 
+
+    .content {
         position: relative;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
         width: 1024px;
     }
-    .content_search{
+
+    .content_search {
         position: relative;
         height: 100%;
         margin-right: auto;
         width: 950px;
         margin-left: 30px;
     }
+
     .artists {
         margin-top: 100px;
         padding-left: 40px;
     }
-    .popular_tracks_grid{
+    .popular_tracks_grid {
         display: grid;
         grid-template-columns: repeat(3, 340px);
         grid-template-rows: repeat(6, 150px);
         justify-content: center;
     }
-    .footer_top{
+
+    .footer_top {
         height: 50%;
         width: 950px;
         padding: 30px;
@@ -100,24 +131,26 @@
         flex-direction: row;
         margin-left: auto;
         margin-right: auto;
-    }
-    .block{
+    } 
+
+    .block {
         background-color: #ebebeb;
         visibility: hidden;
     }
-    .search_content{
+
+    .search_content {
         width: 100%;
         position: relative;
         height: 100%;
     }
 }
 
-.disc{
+.disc {
     position: absolute;
     left: 0;
 }
 
-.logo{
+.logo {
     width: 104px;
     height: 40px;
     background-position-y: 5px;
@@ -130,52 +163,53 @@
     left: auto;
 }
 
-.cur_track{
+.cur_track {
     display: flex;
     flex-direction: row;
     gap: 100px;
 }
 
-.header_track_buttons{
+.header_track_buttons {
     position:relative;
     top: 5px;
 }
 
-.btn{
+.btn {
     height: 50px;
     width: 40px;
     background-color: black;
-    cursor:pointer;
+    cursor: pointer;
     border: 0;
 }
 
-.prev_btn{
+.prev_btn {
     background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png); 
     background-position: -5px 0px;
 }
-.play_btn{
+
+.play_btn {
     background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
     background-position: -45px 0px;
 }
 
-.header{
+.header {
     position: sticky;
     top: 0;
     z-index: 3;
     background-color: black;
 }
 
-.next_btn{
+.next_btn {
     background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
     background-position: -125px 0px;
 }
 
-.like_btn{
+.like_btn {
     background-image: url(https://www.last.fm/static/images/player_controls.574646cbe24e.png);
     background-position: -370px 0px;
 }
 
-.search_btn{
+.search_btn {
     background-image: url(https://www.last.fm/static/images/icons/search_16.bde37072495a.png);
     background-color: black;
     background-repeat: no-repeat;
@@ -185,18 +219,18 @@
     cursor: pointer;
 }
 
-.header_list{
+.header_list {
     padding-top: 5px;
 }
 
-.header_list_item{
+.header_list_item {
     margin-top: auto;
     justify-content: right;
     display: inline;
     padding-left: 10px;
 }
 
-.header_nav_div{
+.header_nav_div {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -204,13 +238,13 @@
     padding-top: 10px;
 }
 
-.header_link{
+.header_link {
     text-decoration: none;
     color: white;
     font-size: small;
 }
 
-.profile_link{
+.profile_link {
     margin-left: 10px;
     margin-right: 10px;
     background-image: url(https://lastfm.freetls.fastly.net/i/u/avatar42s/818148bf682d429dc215c1705eb27b98.png);
@@ -225,7 +259,7 @@
     right: 0%;
 }
 
-.header_div{
+.header_div {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -233,23 +267,23 @@
     justify-content: space-between;
 }
 
-.content_top{
+.content_top {
     text-align: center;
 }
 
-.hot_rn_section{
+.hot_rn_section {
     position: relative;
     width: 100%;
     height: 100%;
     top: 5%;
 }
 
-.content_top_header{
+.content_top_header {
     font-size: 48px;
     margin-top: 2%;
 }
 
-.music_section_underline{
+.music_section_underline {
     font-size: 18px;
     line-height: 24px;
     padding-bottom: 18px;
@@ -257,7 +291,7 @@
     text-align: center;
 }
 
-.music_section_underline::after{
+.music_section_underline::after {
     background: #b90000;
     bottom: 0;
     content: "";
@@ -268,18 +302,18 @@
     width: 50px;
 }
 
-.artists_list{
+.artists_list {
     display: flex;
     list-style-type: none;
     justify-items: center;
 }
-.artists_grid{
+.artists_grid {
     display: grid;
     grid-template-columns: repeat(6, 160px);
     grid-template-rows: repeat(2, 250px);
 }
 
-.artist_photo{
+.artist_photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -287,124 +321,124 @@
     z-index: 1;
 }
 
-.artist_name{
+.artist_name {
     margin-top: 10px;
     font-weight: bold;
 }
 
-.genres{
+.genres {
     color: gainsboro;
     font-size: small;
 }
 
-.ptrack{
+.ptrack {
     display: flex;
     flex-direction: row;
 }
 
-.cover{
+.cover {
     width: 70px;
     height: 70px;
     background-color: black;
     margin-right: 15px;
 }
 
-.track_info{
+.track_info {
     display: flex;
     flex-direction: column;
     height: 70px;
 }
 
-.track_title{
+.track_title {
     margin-bottom: -8px;
 }
 
-.footer{
+.footer {
     background-color: black;
     height: 280px;
 }
 
-.footer_content{
+.footer_content {
     display: flex;
     flex-direction: column;
 }
 
-.footer_bottom{
+.footer_bottom {
     height: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.footer_top_col{
+.footer_top_col {
     color: white;
     margin-right: 10%;
 }
 
-.footer_header{
+.footer_header {
     font-size: small;
     color: grey;
 }
 
-.footer_link{
+.footer_link {
     text-decoration: none;
     color: white;
     font-family: 'Sans-serif';
 
 }
 
-.footer_links{
+.footer_links {
     font-size: 13px;
     list-style-type: none;
 
 }
 
-.footer_bottom{
+.footer_bottom {
     display: flex;
     flex-direction: row;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.footer_li{
+.footer_li {
     display: inline;
     font-family: 'Sans-serif';
     margin-right: 10px;
 }
 
-.footer_bottom_list{
+.footer_bottom_list {
     list-style-type: none;
     display: inline;
     color: grey;
 }
 
-.timezone{
+.timezone {
     color: grey;
     font-family: 'Sans-serif';
 
 }
 
-.copyright{
+.copyright {
     font-size: x-small;
 }
 
-.footer_link_c{
+.footer_link_c {
     text-decoration: none;
     color: grey;
     font-family: 'Sans-serif';
 }
 
-.scrobbler{
+.scrobbler {
     font-size: x-small;
     text-align: right;
     color: white;
     margin-left: 300px;
 }
 
-#search{
+#search {
     font-size: xx-large;
 }
 
-.search_content_top::after{
+.search_content_top::after {
     border-top: 1px solid #ebebeb;
     content: "";
     left: 0;
@@ -414,18 +448,18 @@
     width: 100%;
 }
 
-.search_nav_list{
+.search_nav_list {
     margin-top: 10px;
     font-family: "Sans-serif";
     font-weight: 100;
     font-size: small;
 }
 
-.search_nav_item{
+.search_nav_item {
     display: inline;
 }
 
-.search_form{
+.search_form {
     display: inline;
     border: 2px;
     border-radius: 3px;
@@ -435,12 +469,12 @@
     top: 55px;
 }
 
-.search_input{
+.search_input {
     width: 60%;
     border: 0;
 }
 
-.btn16{
+.btn16 {
     background-size: 16px 16px;
     height: 16px;
     width: 16px;
@@ -452,44 +486,44 @@
     right: 5px;
 }
 
-.clear_btn{
+.clear_btn {
     background-image: url(https://www.last.fm/static/images/icons/clear_field_16@2x.0cf2adb54a39.png);
 }
 
-.form_search_btn{
+.form_search_btn {
     background-image: url(https://www.last.fm/static/images/icons/search_232323_16@2x.21ba32cf82c7.png);
 }
 
-.grid_square{
+.grid_square {
     display: grid;
     grid-template-columns: repeat(5, 150px);
     grid-template-rows: repeat(2, 150px);
     margin-bottom: 70px;
 }
 
-.photo_square{
+.photo_square {
     background-color: black;
     width: 150px;
     height: 150px;
 }
 
-.search_results{
+.search_results {
     margin-top: 100px;
 }
 
-.square_info{
+.square_info {
     margin-top:100px;
     color: white;
     font-size: large;
     font-weight: bold;
 }
 
-.square_sec_info{
+.square_sec_info {
     color: white;
     font-size: 12px;
 }
 
-.track{
+.track {
     display: flex;
     width: 620px;
     height: 32px;
@@ -499,7 +533,7 @@
     padding-top: 9px;
 }
 
-.track::after{
+.track::after {
     border-bottom: 1px solid #ebebeb;
     content: "";
     left: 15px;
@@ -508,7 +542,7 @@
     margin-top: 40px;
 }
 
-.track_play_btn{
+.track_play_btn {
     background-image: url(https://www.last.fm/static/images/icons/play_dark_16@2x.c1748144f8cb.png);
     background-size: 16px 16px;
     background-repeat: no-repeat;
@@ -521,14 +555,14 @@
     margin-right: 15px;
 }
 
-.track_image{
+.track_image {
     background-image: url(https://lastfm.freetls.fastly.net/i/u/64s/c6f59c1e5e7240a4c0d427abd71f3dbb.jpg);
     background-size: 38px 38px;
     width: 38px;
     height: 38px;
 }
 
-.track_like_btn{
+.track_like_btn {
     background-image: url(https://www.last.fm/static/images/icons/love_animation_tracklist_24.3c884b0287d4.png);
     background-repeat: no-repeat;
     background-position: 7px 7px;
@@ -537,19 +571,19 @@
     margin-right: 30px;
 }
 
-.track_name{
+.track_name {
     margin-right: 100px;
 }
 
-.artist{
+.artist {
     margin-right: 100px;
     margin-top: 5px;
 }
 
-.duration{
+.duration {
     margin-top: 5px;
 }
 
-.footer_main{
+.footer_main {
     margin-top: 100px
 }
